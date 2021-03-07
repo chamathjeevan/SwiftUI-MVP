@@ -1,0 +1,51 @@
+query GitProfile {
+user(login: "leerob") {
+    name
+    avatarUrl
+    email
+    company
+    bio
+    followers {
+      totalCount
+    }
+    following {
+      totalCount
+    }
+    pinnedItems(first: 5, types: REPOSITORY) {
+      nodes {
+        ... on Repository {
+        name
+        description
+        url
+        stargazerCount
+        primaryLanguage {
+          name
+        }
+        }
+      }
+    }
+    topRepositories(orderBy: {field: CREATED_AT, direction: ASC}, last: 10) {
+      nodes {
+        name
+        description
+        url
+        stargazerCount
+        primaryLanguage {
+          id
+          name
+        }
+      }
+    }
+    starredRepositories(first: 10) {
+      nodes {
+        name
+        description
+        url
+        stargazerCount
+        primaryLanguage {
+          name
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03A3538325F472A90004819D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3538225F472A90004819D /* Profile.swift */; };
+		03A3538B25F472C10004819D /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3538A25F472C10004819D /* Repository.swift */; };
+		03A3539125F47A8E0004819D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3539025F47A8E0004819D /* Presenter.swift */; };
+		03A3539625F47EB40004819D /* ProfileServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3539525F47EB40004819D /* ProfileServices.swift */; };
+		03A353AC25F485490004819D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A353AB25F485490004819D /* ProfileView.swift */; };
+		03A353B125F4863B0004819D /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A353B025F4863B0004819D /* ProfileStore.swift */; };
+		03A353EF25F4CB360004819D /* MockProfileServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A353EE25F4CB360004819D /* MockProfileServices.swift */; };
+		03A3540625F4DA490004819D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3540525F4DA490004819D /* HeaderView.swift */; };
+		03A3542325F4E4320004819D /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3542225F4E4320004819D /* ImageView.swift */; };
+		03A3542825F4E4A80004819D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3542725F4E4A80004819D /* ImageLoader.swift */; };
+		03A3543B25F4E9510004819D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3543A25F4E9510004819D /* CellView.swift */; };
+		03A3544325F4EDAB0004819D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3544225F4EDAB0004819D /* ListView.swift */; };
+		03A3545A25F4F2C80004819D /* HorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3545925F4F2C80004819D /* HorizontalView.swift */; };
+		03A3547B25F503060004819D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A3547A25F503060004819D /* schema.json */; };
+		03A3548125F504F10004819D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 03A3548025F504F10004819D /* Apollo */; };
+		03A3548A25F506070004819D /* GitProfile.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 03A3548925F506070004819D /* GitProfile.graphql */; };
+		03C8870725F50899005F8753 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8870625F50899005F8753 /* API.swift */; };
+		03C8870C25F508CC005F8753 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8870B25F508CC005F8753 /* Network.swift */; };
+		03E7491425F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7491325F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift */; };
+		03E7491625F34F7C00EC878B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7491525F34F7C00EC878B /* ContentView.swift */; };
+		03E7491825F34F7D00EC878B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E7491725F34F7D00EC878B /* Assets.xcassets */; };
+		03E7491B25F34F7D00EC878B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E7491A25F34F7D00EC878B /* Preview Assets.xcassets */; };
+		03E7492025F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03E7491E25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodeld */; };
+		03E7492B25F34F7D00EC878B /* OtriumSwiftUIMVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7492A25F34F7D00EC878B /* OtriumSwiftUIMVPTests.swift */; };
+		03E7493625F34F7D00EC878B /* OtriumSwiftUIMVPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7493525F34F7D00EC878B /* OtriumSwiftUIMVPUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03E7492725F34F7D00EC878B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E7490825F34F7C00EC878B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E7490F25F34F7C00EC878B;
+			remoteInfo = OtriumSwiftUIMVP;
+		};
+		03E7493225F34F7D00EC878B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E7490825F34F7C00EC878B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E7490F25F34F7C00EC878B;
+			remoteInfo = OtriumSwiftUIMVP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03A3538225F472A90004819D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		03A3538A25F472C10004819D /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		03A3539025F47A8E0004819D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		03A3539525F47EB40004819D /* ProfileServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileServices.swift; sourceTree = "<group>"; };
+		03A353AB25F485490004819D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		03A353B025F4863B0004819D /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+		03A353EE25F4CB360004819D /* MockProfileServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockProfileServices.swift; sourceTree = "<group>"; };
+		03A3540525F4DA490004819D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		03A3542225F4E4320004819D /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		03A3542725F4E4A80004819D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		03A3543A25F4E9510004819D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		03A3544225F4EDAB0004819D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		03A3545925F4F2C80004819D /* HorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalView.swift; sourceTree = "<group>"; };
+		03A3547A25F503060004819D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		03A3548925F506070004819D /* GitProfile.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitProfile.graphql; sourceTree = "<group>"; };
+		03C8870625F50899005F8753 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = OtriumSwiftUIMVP/API.swift; sourceTree = SOURCE_ROOT; };
+		03C8870B25F508CC005F8753 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		03E7491025F34F7C00EC878B /* OtriumSwiftUIMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtriumSwiftUIMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E7491325F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumSwiftUIMVPApp.swift; sourceTree = "<group>"; };
+		03E7491525F34F7C00EC878B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		03E7491725F34F7D00EC878B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03E7491A25F34F7D00EC878B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03E7491F25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OtriumSwiftUIMVP.xcdatamodel; sourceTree = "<group>"; };
+		03E7492125F34F7D00EC878B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E7492625F34F7D00EC878B /* OtriumSwiftUIMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtriumSwiftUIMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E7492A25F34F7D00EC878B /* OtriumSwiftUIMVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumSwiftUIMVPTests.swift; sourceTree = "<group>"; };
+		03E7492C25F34F7D00EC878B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03E7493125F34F7D00EC878B /* OtriumSwiftUIMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OtriumSwiftUIMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E7493525F34F7D00EC878B /* OtriumSwiftUIMVPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumSwiftUIMVPUITests.swift; sourceTree = "<group>"; };
+		03E7493725F34F7D00EC878B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E7490D25F34F7C00EC878B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A3548125F504F10004819D /* Apollo in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492325F34F7D00EC878B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492E25F34F7D00EC878B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03A3538125F472930004819D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03A3539525F47EB40004819D /* ProfileServices.swift */,
+				03A3542725F4E4A80004819D /* ImageLoader.swift */,
+				03A3548525F505000004819D /* GraphQL */,
+				03A3538225F472A90004819D /* Profile.swift */,
+				03A3538A25F472C10004819D /* Repository.swift */,
+				03A353B025F4863B0004819D /* ProfileStore.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03A3538F25F4794F0004819D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				03A3539025F47A8E0004819D /* Presenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		03A3547925F501F40004819D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03E7491525F34F7C00EC878B /* ContentView.swift */,
+				03A353AB25F485490004819D /* ProfileView.swift */,
+				03A353EE25F4CB360004819D /* MockProfileServices.swift */,
+				03A3540525F4DA490004819D /* HeaderView.swift */,
+				03A3542225F4E4320004819D /* ImageView.swift */,
+				03A3543A25F4E9510004819D /* CellView.swift */,
+				03A3544225F4EDAB0004819D /* ListView.swift */,
+				03A3545925F4F2C80004819D /* HorizontalView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		03A3548525F505000004819D /* GraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				03C8870625F50899005F8753 /* API.swift */,
+				03A3548925F506070004819D /* GitProfile.graphql */,
+			);
+			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		03E7490725F34F7C00EC878B = {
+			isa = PBXGroup;
+			children = (
+				03E7491225F34F7C00EC878B /* OtriumSwiftUIMVP */,
+				03E7492925F34F7D00EC878B /* OtriumSwiftUIMVPTests */,
+				03E7493425F34F7D00EC878B /* OtriumSwiftUIMVPUITests */,
+				03E7491125F34F7C00EC878B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03E7491125F34F7C00EC878B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E7491025F34F7C00EC878B /* OtriumSwiftUIMVP.app */,
+				03E7492625F34F7D00EC878B /* OtriumSwiftUIMVPTests.xctest */,
+				03E7493125F34F7D00EC878B /* OtriumSwiftUIMVPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E7491225F34F7C00EC878B /* OtriumSwiftUIMVP */ = {
+			isa = PBXGroup;
+			children = (
+				03A3547A25F503060004819D /* schema.json */,
+				03A3547925F501F40004819D /* View */,
+				03A3538F25F4794F0004819D /* Presenter */,
+				03A3538125F472930004819D /* Model */,
+				03E7491325F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift */,
+				03E7491725F34F7D00EC878B /* Assets.xcassets */,
+				03E7492125F34F7D00EC878B /* Info.plist */,
+				03E7491E25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodeld */,
+				03E7491925F34F7D00EC878B /* Preview Content */,
+				03C8870B25F508CC005F8753 /* Network.swift */,
+			);
+			path = OtriumSwiftUIMVP;
+			sourceTree = "<group>";
+		};
+		03E7491925F34F7D00EC878B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				03E7491A25F34F7D00EC878B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03E7492925F34F7D00EC878B /* OtriumSwiftUIMVPTests */ = {
+			isa = PBXGroup;
+			children = (
+				03E7492A25F34F7D00EC878B /* OtriumSwiftUIMVPTests.swift */,
+				03E7492C25F34F7D00EC878B /* Info.plist */,
+			);
+			path = OtriumSwiftUIMVPTests;
+			sourceTree = "<group>";
+		};
+		03E7493425F34F7D00EC878B /* OtriumSwiftUIMVPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03E7493525F34F7D00EC878B /* OtriumSwiftUIMVPUITests.swift */,
+				03E7493725F34F7D00EC878B /* Info.plist */,
+			);
+			path = OtriumSwiftUIMVPUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E7490F25F34F7C00EC878B /* OtriumSwiftUIMVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E7493A25F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVP" */;
+			buildPhases = (
+				03C886FF25F507CC005F8753 /* Generate Apollo GraphQL API */,
+				03E7490C25F34F7C00EC878B /* Sources */,
+				03E7490D25F34F7C00EC878B /* Frameworks */,
+				03E7490E25F34F7C00EC878B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OtriumSwiftUIMVP;
+			packageProductDependencies = (
+				03A3548025F504F10004819D /* Apollo */,
+			);
+			productName = OtriumSwiftUIMVP;
+			productReference = 03E7491025F34F7C00EC878B /* OtriumSwiftUIMVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03E7492525F34F7D00EC878B /* OtriumSwiftUIMVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E7493D25F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVPTests" */;
+			buildPhases = (
+				03E7492225F34F7D00EC878B /* Sources */,
+				03E7492325F34F7D00EC878B /* Frameworks */,
+				03E7492425F34F7D00EC878B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E7492825F34F7D00EC878B /* PBXTargetDependency */,
+			);
+			name = OtriumSwiftUIMVPTests;
+			productName = OtriumSwiftUIMVPTests;
+			productReference = 03E7492625F34F7D00EC878B /* OtriumSwiftUIMVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03E7493025F34F7D00EC878B /* OtriumSwiftUIMVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E7494025F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVPUITests" */;
+			buildPhases = (
+				03E7492D25F34F7D00EC878B /* Sources */,
+				03E7492E25F34F7D00EC878B /* Frameworks */,
+				03E7492F25F34F7D00EC878B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E7493325F34F7D00EC878B /* PBXTargetDependency */,
+			);
+			name = OtriumSwiftUIMVPUITests;
+			productName = OtriumSwiftUIMVPUITests;
+			productReference = 03E7493125F34F7D00EC878B /* OtriumSwiftUIMVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E7490825F34F7C00EC878B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					03E7490F25F34F7C00EC878B = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					03E7492525F34F7D00EC878B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 03E7490F25F34F7C00EC878B;
+					};
+					03E7493025F34F7D00EC878B = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 03E7490F25F34F7C00EC878B;
+					};
+				};
+			};
+			buildConfigurationList = 03E7490B25F34F7C00EC878B /* Build configuration list for PBXProject "OtriumSwiftUIMVP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03E7490725F34F7C00EC878B;
+			packageReferences = (
+				03A3547F25F504F10004819D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 03E7491125F34F7C00EC878B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E7490F25F34F7C00EC878B /* OtriumSwiftUIMVP */,
+				03E7492525F34F7D00EC878B /* OtriumSwiftUIMVPTests */,
+				03E7493025F34F7D00EC878B /* OtriumSwiftUIMVPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E7490E25F34F7C00EC878B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E7491B25F34F7D00EC878B /* Preview Assets.xcassets in Resources */,
+				03A3547B25F503060004819D /* schema.json in Resources */,
+				03E7491825F34F7D00EC878B /* Assets.xcassets in Resources */,
+				03A3548A25F506070004819D /* GitProfile.graphql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492425F34F7D00EC878B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492F25F34F7D00EC878B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C886FF25F507CC005F8753 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E7490C25F34F7C00EC878B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A3545A25F4F2C80004819D /* HorizontalView.swift in Sources */,
+				03C8870725F50899005F8753 /* API.swift in Sources */,
+				03A3542325F4E4320004819D /* ImageView.swift in Sources */,
+				03A353B125F4863B0004819D /* ProfileStore.swift in Sources */,
+				03A3544325F4EDAB0004819D /* ListView.swift in Sources */,
+				03A353AC25F485490004819D /* ProfileView.swift in Sources */,
+				03A3543B25F4E9510004819D /* CellView.swift in Sources */,
+				03A3542825F4E4A80004819D /* ImageLoader.swift in Sources */,
+				03C8870C25F508CC005F8753 /* Network.swift in Sources */,
+				03A353EF25F4CB360004819D /* MockProfileServices.swift in Sources */,
+				03A3538325F472A90004819D /* Profile.swift in Sources */,
+				03E7491625F34F7C00EC878B /* ContentView.swift in Sources */,
+				03A3539125F47A8E0004819D /* Presenter.swift in Sources */,
+				03E7491425F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift in Sources */,
+				03A3539625F47EB40004819D /* ProfileServices.swift in Sources */,
+				03E7492025F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodeld in Sources */,
+				03A3538B25F472C10004819D /* Repository.swift in Sources */,
+				03A3540625F4DA490004819D /* HeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492225F34F7D00EC878B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E7492B25F34F7D00EC878B /* OtriumSwiftUIMVPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E7492D25F34F7D00EC878B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E7493625F34F7D00EC878B /* OtriumSwiftUIMVPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03E7492825F34F7D00EC878B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E7490F25F34F7C00EC878B /* OtriumSwiftUIMVP */;
+			targetProxy = 03E7492725F34F7D00EC878B /* PBXContainerItemProxy */;
+		};
+		03E7493325F34F7D00EC878B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E7490F25F34F7C00EC878B /* OtriumSwiftUIMVP */;
+			targetProxy = 03E7493225F34F7D00EC878B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03E7493825F34F7D00EC878B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03E7493925F34F7D00EC878B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E7493B25F34F7D00EC878B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OtriumSwiftUIMVP/Preview Content\"";
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OtriumSwiftUIMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03E7493C25F34F7D00EC878B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"OtriumSwiftUIMVP/Preview Content\"";
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = OtriumSwiftUIMVP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03E7493E25F34F7D00EC878B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				INFOPLIST_FILE = OtriumSwiftUIMVPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtriumSwiftUIMVP.app/OtriumSwiftUIMVP";
+			};
+			name = Debug;
+		};
+		03E7493F25F34F7D00EC878B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				INFOPLIST_FILE = OtriumSwiftUIMVPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OtriumSwiftUIMVP.app/OtriumSwiftUIMVP";
+			};
+			name = Release;
+		};
+		03E7494125F34F7D00EC878B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				INFOPLIST_FILE = OtriumSwiftUIMVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtriumSwiftUIMVP;
+			};
+			name = Debug;
+		};
+		03E7494225F34F7D00EC878B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T36KNCW3J8;
+				INFOPLIST_FILE = OtriumSwiftUIMVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.otrium.OtriumSwiftUIMVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = OtriumSwiftUIMVP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E7490B25F34F7C00EC878B /* Build configuration list for PBXProject "OtriumSwiftUIMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E7493825F34F7D00EC878B /* Debug */,
+				03E7493925F34F7D00EC878B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E7493A25F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E7493B25F34F7D00EC878B /* Debug */,
+				03E7493C25F34F7D00EC878B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E7493D25F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E7493E25F34F7D00EC878B /* Debug */,
+				03E7493F25F34F7D00EC878B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E7494025F34F7D00EC878B /* Build configuration list for PBXNativeTarget "OtriumSwiftUIMVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E7494125F34F7D00EC878B /* Debug */,
+				03E7494225F34F7D00EC878B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03A3547F25F504F10004819D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.41.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03A3548025F504F10004819D /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03A3547F25F504F10004819D /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		03E7491E25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03E7491F25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodel */,
+			);
+			currentVersion = 03E7491F25F34F7D00EC878B /* OtriumSwiftUIMVP.xcdatamodel */;
+			path = OtriumSwiftUIMVP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03E7490825F34F7C00EC878B /* Project object */;
+}
