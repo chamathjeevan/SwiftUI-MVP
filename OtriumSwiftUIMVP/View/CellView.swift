@@ -20,8 +20,6 @@ struct CellView: View {
             VStack(alignment: .leading, spacing: 0.0) {
                 HStack(alignment: .center) {
                     ImageView(imageUrl: imageUrl, width: 32, height: 32)
-                    
-                    
                     Text(name)
                         .font(.custom("SourceSansPro-Regular", size: 16))
                         .frame( height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

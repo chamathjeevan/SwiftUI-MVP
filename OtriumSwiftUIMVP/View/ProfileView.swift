@@ -32,9 +32,9 @@ struct ProfileView: View {
                             ScrollView{
                                 VStack{
                                     HeaderView(imageUrl: profile.avatarUrl, profileName: profile.name, description: profile.bio, email: profile.email, followers: profile.followers, following: profile.following)
-                                    ListView(repositories: profile.pinnedRepositories, title: "Pinned Repositeries")
-                                    HorizontalView(repositories: profile.topRepositories, title: "Top Repositeries")
-                                    HorizontalView(repositories: profile.starredRepositories, title: "Started Repositeries")
+                                    ListView( presenter: presenter, repositories: profile.pinnedRepositories, title: "Pinned Repositeries")
+                                    HorizontalView(presenter: presenter,repositories: profile.topRepositories, title: "Top Repositeries")
+                                    HorizontalView(presenter: presenter,repositories: profile.starredRepositories, title: "Started Repositeries")
                                 }
                                 Spacer()
                             }

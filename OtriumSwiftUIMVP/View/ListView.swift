@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ListView: View {
+    var presenter: PresenterProtocol!
     var repositories: [RepositoryViewModel]
+    @State var isViewAll = false
     var title: String
     var body: some View {
         VStack{
@@ -18,10 +20,13 @@ struct ListView: View {
                     .padding(.leading, 16.0)
                     .frame(height: 32)
                 Spacer()
-                Button(action: { }){ Text("View All").underline().font(.custom("SourceSansPro-Regular", size: 16))
+                Button(action: {
+                    presenter.viewAllPinnedRepors()
+                    isViewAll = isViewAll ? false: true
+                }){ Text(isViewAll ? "Show less": "View All").underline().font(.custom("SourceSansPro-Regular", size: 16))
                     .foregroundColor(Color.black)
                     .frame( height: 24, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)}
-                    .padding(.trailing, 16.0)
+                .padding(.trailing, 16.0)
                 
             }
             ScrollView{

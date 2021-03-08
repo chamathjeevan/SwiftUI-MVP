@@ -9,7 +9,9 @@ import Foundation
 
 protocol PresenterProtocol: AnyObject {
     func fetchProfile()
-    func viewAllList()
+    func viewAllPinnedRepors()
+    func viewAllTopRepors()
+    func viewAllStartedRepors()
 }
 
 protocol PresenterDelegate: AnyObject {
@@ -23,7 +25,9 @@ class Presenter : PresenterProtocol {
     private weak var delegate: PresenterDelegate?
     private var profile: Profile!
     private var viewProfile: ProfileViewModel!
-    
+    private var isViewAllPinned = false
+    private var isViewAlltop = false
+    private var isViewAllStared = false
     init(service: ServicesProtocol, delegate: PresenterDelegate?) {
         self.service = service
         self.delegate = delegate
@@ -43,33 +47,31 @@ class Presenter : PresenterProtocol {
     }
     
     private func mapProfileViewModel(_ profile: Profile) -> ProfileViewModel {
-        let limit = 3
         
         var pinnedRepoViewModels = [RepositoryViewModel]()
+        
         for i in 0 ..< profile.pinnedRepositories.count {
-            if i == limit {
+            
+            if  isViewAllPinned == false && i > 2 {
                 break
             }
             pinnedRepoViewModels.append(RepositoryViewModel(id: UUID(), imageUrl: profile.avatarUrl, name: profile.pinnedRepositories[i].name, title: profile.pinnedRepositories[i].title, description: profile.pinnedRepositories[i].description, stargazer: profile.pinnedRepositories[i].stargazerCount, language: profile.pinnedRepositories[i].primaryLanguage))
-            
         }
         
         var topRepoViewModels = [RepositoryViewModel]()
         for i in 0 ..< profile.topRepositories.count {
-            if i == limit {
+            if isViewAlltop  == false && i > 2  {
                 break
             }
             topRepoViewModels.append(RepositoryViewModel(id: UUID(), imageUrl: profile.avatarUrl, name: profile.topRepositories[i].name, title: profile.topRepositories[i].title, description: profile.topRepositories[i].description, stargazer: profile.topRepositories[i].stargazerCount, language: profile.topRepositories[i].primaryLanguage))
-            
         }
         
         var starredRepoViewModels = [RepositoryViewModel]()
         for i in 0 ..< profile.starredRepositories.count {
-            if i == limit {
+            if isViewAllStared  == false && i > 2  {
                 break
             }
             starredRepoViewModels.append(RepositoryViewModel(id: UUID(), imageUrl: profile.avatarUrl, name: profile.starredRepositories[i].name, title: profile.starredRepositories[i].title, description: profile.starredRepositories[i].description, stargazer: profile.starredRepositories[i].stargazerCount, language: profile.starredRepositories[i].primaryLanguage))
-            
         }
         
         let profileViewModel = ProfileViewModel(name: profile.name, avatarUrl: profile.avatarUrl, bio: profile.bio, company: profile.company, email: profile.email, followers: "\(profile.followers)", following: "\(profile.following)", pinnedRepositories: pinnedRepoViewModels, topRepositories: topRepoViewModels, starredRepositories: starredRepoViewModels)
@@ -77,7 +79,23 @@ class Presenter : PresenterProtocol {
         return profileViewModel
     }
     
-    func viewAllList() {
+    func viewAllPinnedRepors() {
+        
+        fetchProfile()
+        isViewAllPinned = (isViewAllPinned ? false:true)
     }
+    
+    func viewAllTopRepors() {
+        
+        fetchProfile()
+        isViewAlltop = (isViewAlltop ? false:true)
+    }
+    func viewAllStartedRepors() {
+
+        fetchProfile()
+        isViewAllStared = (isViewAllStared ? false:true)
+    }
+    
 }
+
 

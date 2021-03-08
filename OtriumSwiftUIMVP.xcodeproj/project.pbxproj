@@ -20,11 +20,11 @@
 		03A3543B25F4E9510004819D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3543A25F4E9510004819D /* CellView.swift */; };
 		03A3544325F4EDAB0004819D /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3544225F4EDAB0004819D /* ListView.swift */; };
 		03A3545A25F4F2C80004819D /* HorizontalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A3545925F4F2C80004819D /* HorizontalView.swift */; };
-		03A3547B25F503060004819D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 03A3547A25F503060004819D /* schema.json */; };
 		03A3548125F504F10004819D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 03A3548025F504F10004819D /* Apollo */; };
 		03A3548A25F506070004819D /* GitProfile.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 03A3548925F506070004819D /* GitProfile.graphql */; };
 		03C8870725F50899005F8753 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8870625F50899005F8753 /* API.swift */; };
 		03C8870C25F508CC005F8753 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C8870B25F508CC005F8753 /* Network.swift */; };
+		03D847F225F5AF6C0018225D /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 03D847F125F5AF6C0018225D /* schema.json */; };
 		03E7491425F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7491325F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift */; };
 		03E7491625F34F7C00EC878B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E7491525F34F7C00EC878B /* ContentView.swift */; };
 		03E7491825F34F7D00EC878B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03E7491725F34F7D00EC878B /* Assets.xcassets */; };
@@ -65,10 +65,10 @@
 		03A3543A25F4E9510004819D /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		03A3544225F4EDAB0004819D /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		03A3545925F4F2C80004819D /* HorizontalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalView.swift; sourceTree = "<group>"; };
-		03A3547A25F503060004819D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		03A3548925F506070004819D /* GitProfile.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GitProfile.graphql; sourceTree = "<group>"; };
 		03C8870625F50899005F8753 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = OtriumSwiftUIMVP/API.swift; sourceTree = SOURCE_ROOT; };
 		03C8870B25F508CC005F8753 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		03D847F125F5AF6C0018225D /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		03E7491025F34F7C00EC878B /* OtriumSwiftUIMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OtriumSwiftUIMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E7491325F34F7C00EC878B /* OtriumSwiftUIMVPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtriumSwiftUIMVPApp.swift; sourceTree = "<group>"; };
 		03E7491525F34F7C00EC878B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 		03E7491225F34F7C00EC878B /* OtriumSwiftUIMVP */ = {
 			isa = PBXGroup;
 			children = (
-				03A3547A25F503060004819D /* schema.json */,
+				03D847F125F5AF6C0018225D /* schema.json */,
 				03A3547925F501F40004819D /* View */,
 				03A3538F25F4794F0004819D /* Presenter */,
 				03A3538125F472930004819D /* Model */,
@@ -328,8 +328,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03D847F225F5AF6C0018225D /* schema.json in Resources */,
 				03E7491B25F34F7D00EC878B /* Preview Assets.xcassets in Resources */,
-				03A3547B25F503060004819D /* schema.json in Resources */,
 				03E7491825F34F7D00EC878B /* Assets.xcassets in Resources */,
 				03A3548A25F506070004819D /* GitProfile.graphql in Resources */,
 			);
