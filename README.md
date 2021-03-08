@@ -6,3 +6,9 @@ Technical Stack
 SwiftUI
 Apollo GraphQL ios extention 
 Unit Testing 
+Swift Package Manager
+Steps to run the project
+
+(1) - Clone the project.
+(2) - Restore dependencies packages.
+      - Xcode Menu - File ->  Swift Packages -> Reset Package Cache
