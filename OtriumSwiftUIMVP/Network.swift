@@ -15,7 +15,7 @@ class Network {
 
         let cache = InMemoryNormalizedCache()
         let store1 = ApolloStore(cache: cache)
-        let authPayloads = ["Authorization": "Bearer cd1cca6d34b12fc2714c0f7d9fe985dc3c0b3145"]
+        let authPayloads = ["Authorization": "Bearer deb8e64ba6974a67d0afb9b41cebc0002e4b114f"]
         let configuration = URLSessionConfiguration.default
         configuration.httpAdditionalHeaders = authPayloads
         
@@ -46,7 +46,7 @@ class CustomInterceptor: ApolloInterceptor {
         request: HTTPRequest<Operation>,
         response: HTTPResponse<Operation>?,
         completion: @escaping (Swift.Result<GraphQLResult<Operation.Data>, Error>) -> Void) {
-        request.addHeader(name: "Authorization", value: "Bearer cd1cca6d34b12fc2714c0f7d9fe985dc3c0b3145")
+        request.addHeader(name: "Authorization", value: "Bearer deb8e64ba6974a67d0afb9b41cebc0002e4b114f")
         
         print("request :\(request)")
         print("response :\(String(describing: response))")
